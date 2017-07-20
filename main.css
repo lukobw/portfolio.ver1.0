@@ -214,7 +214,7 @@ section {
   section .contact-info {
     font-size: 18px;
     line-height: 40px;
-    padding: 45px;
+    padding: 45px 0 0;
     text-align: center; }
     section .contact-info p {
       margin: 0; }
@@ -242,6 +242,30 @@ footer {
     font-size: 24px;
     margin: 0;
     padding: 10px; }
+
+.navbar,
+.navbar-inverse {
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  min-height: 60px;
+  padding-right: 50px; }
+
+.nav li {
+  color: #fff;
+  display: inline; }
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+  font-family: Lato;
+  font-size: 1.4em;
+  font-weight: 300;
+  padding: 25px 25px; }
+
+.navbar-inverse .navbar-nav li a:hover {
+  background-color: #444444;
+  height: 100%;
+  transition: 0.7s linear; }
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   .col-m-1 {
@@ -483,6 +507,14 @@ footer {
   .tools h2 {
     font-size: 4vw; }
 
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+
+  .navbar-inverse .navbar-nav li a:hover {
+    transition: none;
+    background-color: #222; }
+
   .col-m-2 {
     width: 16.66667%; }
 
@@ -529,6 +561,14 @@ footer {
 
   .tools h2 {
     font-size: 4vw; }
+
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+
+  .navbar-inverse .navbar-nav li a:hover {
+    transition: none;
+    background-color: #222; }
 
   .col-m-3 {
     width: 25%; }
@@ -577,6 +617,14 @@ footer {
   .tools h2 {
     font-size: 4vw; }
 
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+
+  .navbar-inverse .navbar-nav li a:hover {
+    transition: none;
+    background-color: #222; }
+
   .col-m-4 {
     width: 33.33333%; }
 
@@ -623,6 +671,14 @@ footer {
 
   .tools h2 {
     font-size: 4vw; }
+
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+
+  .navbar-inverse .navbar-nav li a:hover {
+    transition: none;
+    background-color: #222; }
 
   .col-m-5 {
     width: 41.66667%; }
@@ -671,6 +727,14 @@ footer {
   .tools h2 {
     font-size: 4vw; }
 
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+
+  .navbar-inverse .navbar-nav li a:hover {
+    transition: none;
+    background-color: #222; }
+
   .col-m-6 {
     width: 50%; }
 
@@ -717,6 +781,14 @@ footer {
 
   .tools h2 {
     font-size: 4vw; }
+
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+
+  .navbar-inverse .navbar-nav li a:hover {
+    transition: none;
+    background-color: #222; }
 
   .col-m-7 {
     width: 58.33333%; }
@@ -765,6 +837,14 @@ footer {
   .tools h2 {
     font-size: 4vw; }
 
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+
+  .navbar-inverse .navbar-nav li a:hover {
+    transition: none;
+    background-color: #222; }
+
   .col-m-8 {
     width: 66.66667%; }
 
@@ -811,6 +891,14 @@ footer {
 
   .tools h2 {
     font-size: 4vw; }
+
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+
+  .navbar-inverse .navbar-nav li a:hover {
+    transition: none;
+    background-color: #222; }
 
   .col-m-9 {
     width: 75%; }
@@ -859,6 +947,14 @@ footer {
   .tools h2 {
     font-size: 4vw; }
 
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+
+  .navbar-inverse .navbar-nav li a:hover {
+    transition: none;
+    background-color: #222; }
+
   .col-m-10 {
     width: 83.33333%; }
 
@@ -905,6 +1001,14 @@ footer {
 
   .tools h2 {
     font-size: 4vw; }
+
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+
+  .navbar-inverse .navbar-nav li a:hover {
+    transition: none;
+    background-color: #222; }
 
   .col-m-11 {
     width: 91.66667%; }
@@ -953,6 +1057,14 @@ footer {
   .tools h2 {
     font-size: 4vw; }
 
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+
+  .navbar-inverse .navbar-nav li a:hover {
+    transition: none;
+    background-color: #222; }
+
   .col-m-12 {
     width: 100%; }
 
@@ -998,7 +1110,15 @@ footer {
     font-size: 4vw; }
 
   .tools h2 {
-    font-size: 4vw; } }
+    font-size: 4vw; }
+
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+
+  .navbar-inverse .navbar-nav li a:hover {
+    transition: none;
+    background-color: #222; } }
 @media only screen and (max-width: 425px) {
   .col-s-1 {
     width: 8.33333%; }
