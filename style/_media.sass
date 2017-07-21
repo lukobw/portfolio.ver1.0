@@ -1,3 +1,10 @@
+// @media only screen and (min-width: 992px) and (max-width: 1440px)
+
+//   header
+
+//     .main-content
+//       height: 132vh
+
 @media only screen and (min-width: 769px) and (max-width: 991px)
 
   @for $i from 1 through 12
@@ -41,8 +48,8 @@
           text-align: justify
           word-break: keep-all
 
-    .main-content
-      height: 183vh
+      .main-content
+        height: 137vh
 
     .big-container
 
@@ -97,8 +104,15 @@
       padding-right: 20px
 
     .navbar-inverse .navbar-nav li a:hover
-      transition: none
       background-color: #222
+      transition: none
+
+    .contact-tech
+      margin-top: 0
+
+    .projects
+      margin-bottom: 0
+
 
 @media only screen and (max-width: 425px)
 
@@ -110,15 +124,17 @@
 
       .main-content
         background: none
-        height: 130vh
+        height: auto
+        min-height: 140vh
 
       .about
 
         p
-          letter-spacing: 0
+          letter-spacing: 1
           margin: 0 auto
-          padding: 5px
-          word-break: break-word
+          padding-bottom: 0
+          white-space: pre-line
+
 
     .technologies
 
@@ -143,6 +159,39 @@
           position: relative
           top: 10px
           vertical-align: middle
+
+    section
+
+      .contact
+
+        img
+          height: 200px
+          width: 200px
+
+    .description
+
+      h2
+        font-size: 36px
+        margin: 30px 0
+
+    .description
+
+      .projects
+        border: 0
+        display: grid
+        margin-top: 0
+        max-width: 425px
+        padding-bottom: 0
+
+    .navbar-toggle
+      float: left
+      margin: 15px 25px
+
+    .contact-tech
+      padding-top: 10px
+
+    .navbar-inverse .navbar-nav li a
+      text-align: center
 
 @media only screen and (max-width: 375px)
 

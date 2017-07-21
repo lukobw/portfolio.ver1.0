@@ -6,40 +6,53 @@ section
   justify-content: center
   padding: 20px
 
+
   .contact
 
     img
-      +img-dimm(50%, 200px, 200px)
+      +img-dimm(50%, 300px, 300px)
       align-items: center
       display: flex
       justify-content: center
-      margin: 0 auto
+      margin: 50px auto
+
+    h1
+      position: relative
+
+    span
+      position: absolute
+      top: -100px
 
 
   .contact-info
     font-size: 18px
     line-height: 40px
-    padding: 45px 0 0
+    padding: 20px 0 0
     text-align: center
 
     p
+      font-size: 22px
+      font-family: $font-roboto
       margin: 0
+
 
     a
       &:hover
         text-decoration: none
 
-  .fa-5x
-    font-size: 5em
-
   .my-cv,
   .git,
   .linkedin,
-  .mail
+  .mail,
+  .facebook
     color: $black
     margin: 10px
 
   .icons
+    align-items: center
     color: $black
     display: flex
     justify-content: center
+
+.contact-tech
+  margin-top: 150px
