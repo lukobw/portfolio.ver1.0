@@ -31,8 +31,9 @@ section
     text-align: center
 
     p
-      font-size: 22px
+      color: $white
       font-family: $font-roboto
+      font-size: 22px
       margin: 0
 
 
@@ -40,13 +41,43 @@ section
       &:hover
         text-decoration: none
 
-  .my-cv,
-  .git,
-  .linkedin,
-  .mail,
+    .my-cv
+      color: $black
+      margin: 10px
+
+      &:hover
+        color: $white
+        transition: .5s ease-in-out
+
+
+
+  .git
+    color: $black
+    margin: 10px
+
+    &:hover
+      color: #fff
+
+  .linkedin
+    color: $black
+    margin: 10px
+
+    &:hover
+      color: #0077B5
+
+  .mail
+    color: $black
+    margin: 10px
+
+    &:hover
+      color: #D24231
+
   .facebook
     color: $black
     margin: 10px
+
+    &:hover
+      color: #3B5998
 
   .icons
     align-items: center
@@ -54,5 +85,11 @@ section
     display: flex
     justify-content: center
 
+    a
+      text-decoration: none
+
 .contact-tech
-  margin-top: 150px
+  margin-top: 0
+
+
+  

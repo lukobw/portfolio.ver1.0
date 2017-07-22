@@ -1,10 +1,27 @@
-// @media only screen and (min-width: 992px) and (max-width: 1440px)
+//102px - 1441px
+@media only screen and (min-width: 1023px) and (max-width: 1441px)
 
-//   header
+  header
+    .main-content
+      height: 132vh
 
-//     .main-content
-//       height: 132vh
+//769px - 1024px
+@media only screen and (min-width: 769px) and (max-width: 1024px)
 
+  header
+
+    .main-content
+      height: 132vh
+
+  .description
+
+    h2
+      margin: 40px 0
+
+  .projects
+    margin: 40px 0
+
+//769px - 991px
 @media only screen and (min-width: 769px) and (max-width: 991px)
 
   @for $i from 1 through 12
@@ -24,12 +41,15 @@
       padding: 0 20px
       text-align: justify
 
-
-
+//<768px
 @media only screen and (max-width: 768px)
 
   @for $i from 1 through 12
     .col-m-#{$i}
+      width: 100% / 12 * $i
+
+  @for $i from 1 through 12
+    .col-s-#{$i}
       width: 100% / 12 * $i
 
     header
@@ -37,16 +57,17 @@
       .about
 
         h2
-          font-size: 28px
+          font-size: $base-font + 12px
           max-width: 418px
 
         p
-          font-size: 22px
+          font-size: $base-font + 6px
           letter-spacing: 1px
           margin-left: 5%
           max-width: 335px
           text-align: justify
           word-break: keep-all
+          word-spacing: -3px
 
       .main-content
         height: 137vh
@@ -113,7 +134,13 @@
     .projects
       margin-bottom: 0
 
+    .icons i:hover
+      color: $black
 
+    section .contact-info .my-cv:hover
+      color: $black
+
+//<425px
 @media only screen and (max-width: 425px)
 
   @for $i from 1 through 12
@@ -134,7 +161,6 @@
           margin: 0 auto
           padding-bottom: 0
           white-space: pre-line
-
 
     .technologies
 
@@ -183,16 +209,25 @@
         max-width: 425px
         padding-bottom: 0
 
+      img
+        margin: 0
+
+      .photo-last
+        max-height: 160px
+        max-width: 200px
+        
+
     .navbar-toggle
       float: left
       margin: 15px 25px
 
     .contact-tech
-      padding-top: 10px
+      padding: 10px 0 0
 
     .navbar-inverse .navbar-nav li a
       text-align: center
 
+//<375px
 @media only screen and (max-width: 375px)
 
   header
@@ -206,6 +241,7 @@
         line-height: 130%
         margin: 1%
 
+//<320px
 @media only screen and (max-width: 320px)
 
   header
@@ -220,6 +256,7 @@
         margin: 1%
         word-break: keep-all
 
+//<426px
 @media only screen and (min-width: 426px)
 
   .technologies .skills
