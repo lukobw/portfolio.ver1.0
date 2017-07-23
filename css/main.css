@@ -70,7 +70,7 @@ header {
       transition-duration: 1s;
       transition-property: transform; }
       .big-container .abilities .ability-image img:hover {
-        transform: scale(1.3); }
+        transform: rotate(45deg); }
   .big-container .abilities .skills {
     text-align: center; }
     .big-container .abilities .skills h2 {
@@ -159,7 +159,7 @@ header {
       transition-duration: 1s;
       transition-property: transform; }
       .technologies .ability-image img:hover {
-        transform: scale(1.3); }
+        transform: rotate(360deg); }
   .technologies .skills {
     text-align: center; }
     .technologies .skills h2 {
@@ -177,6 +177,17 @@ header {
 
 .tech {
   padding-bottom: 40px; }
+  .tech .ability-image img {
+    transition-duration: 1s;
+    transition-property: transform; }
+    .tech .ability-image img:hover {
+      transform: scale(1.3); }
+
+.line .ability-image img {
+  transition-duration: 1s;
+  transition-property: transform; }
+  .line .ability-image img:hover {
+    transform: rotate(-45deg); }
 
 .description {
   display: flex;
@@ -212,9 +223,11 @@ header {
 
 .btn-default {
   background-color: inherit;
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-radius: 15px;
   color: #fff; }
+  .btn-default:visited {
+    background-color: #1C2230; }
   .btn-default:hover {
     background-color: #1b1120;
     color: #fff; }
@@ -1166,8 +1179,8 @@ footer {
   .description img {
     margin: 0; }
   .description .photo-last {
-    max-width: 200px;
-    max-height: 160px; }
+    max-height: 160px;
+    max-width: 200px; }
   .navbar-toggle {
     float: left;
     margin: 15px 25px; }
@@ -1211,8 +1224,8 @@ footer {
   .description img {
     margin: 0; }
   .description .photo-last {
-    max-width: 200px;
-    max-height: 160px; }
+    max-height: 160px;
+    max-width: 200px; }
   .navbar-toggle {
     float: left;
     margin: 15px 25px; }
@@ -1256,8 +1269,8 @@ footer {
   .description img {
     margin: 0; }
   .description .photo-last {
-    max-width: 200px;
-    max-height: 160px; }
+    max-height: 160px;
+    max-width: 200px; }
   .navbar-toggle {
     float: left;
     margin: 15px 25px; }
@@ -1301,8 +1314,8 @@ footer {
   .description img {
     margin: 0; }
   .description .photo-last {
-    max-width: 200px;
-    max-height: 160px; }
+    max-height: 160px;
+    max-width: 200px; }
   .navbar-toggle {
     float: left;
     margin: 15px 25px; }
@@ -1346,8 +1359,8 @@ footer {
   .description img {
     margin: 0; }
   .description .photo-last {
-    max-width: 200px;
-    max-height: 160px; }
+    max-height: 160px;
+    max-width: 200px; }
   .navbar-toggle {
     float: left;
     margin: 15px 25px; }
@@ -1391,8 +1404,8 @@ footer {
   .description img {
     margin: 0; }
   .description .photo-last {
-    max-width: 200px;
-    max-height: 160px; }
+    max-height: 160px;
+    max-width: 200px; }
   .navbar-toggle {
     float: left;
     margin: 15px 25px; }
@@ -1436,8 +1449,8 @@ footer {
   .description img {
     margin: 0; }
   .description .photo-last {
-    max-width: 200px;
-    max-height: 160px; }
+    max-height: 160px;
+    max-width: 200px; }
   .navbar-toggle {
     float: left;
     margin: 15px 25px; }
@@ -1481,8 +1494,8 @@ footer {
   .description img {
     margin: 0; }
   .description .photo-last {
-    max-width: 200px;
-    max-height: 160px; }
+    max-height: 160px;
+    max-width: 200px; }
   .navbar-toggle {
     float: left;
     margin: 15px 25px; }
@@ -1526,8 +1539,8 @@ footer {
   .description img {
     margin: 0; }
   .description .photo-last {
-    max-width: 200px;
-    max-height: 160px; }
+    max-height: 160px;
+    max-width: 200px; }
   .navbar-toggle {
     float: left;
     margin: 15px 25px; }
@@ -1571,8 +1584,8 @@ footer {
   .description img {
     margin: 0; }
   .description .photo-last {
-    max-width: 200px;
-    max-height: 160px; }
+    max-height: 160px;
+    max-width: 200px; }
   .navbar-toggle {
     float: left;
     margin: 15px 25px; }
@@ -1616,8 +1629,8 @@ footer {
   .description img {
     margin: 0; }
   .description .photo-last {
-    max-width: 200px;
-    max-height: 160px; }
+    max-height: 160px;
+    max-width: 200px; }
   .navbar-toggle {
     float: left;
     margin: 15px 25px; }
@@ -1661,8 +1674,8 @@ footer {
   .description img {
     margin: 0; }
   .description .photo-last {
-    max-width: 200px;
-    max-height: 160px; }
+    max-height: 160px;
+    max-width: 200px; }
   .navbar-toggle {
     float: left;
     margin: 15px 25px; }

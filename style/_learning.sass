@@ -1,5 +1,3 @@
-@import 'colors'
-
 @import 'mixins'
 
 
@@ -19,7 +17,7 @@
 
 
   .ability-image
-    +transform
+    +transform-360
     margin: 10px
     min-height: 100px
 
@@ -38,3 +36,7 @@
 
 .tech
   padding-bottom: 40px
+
+  .ability-image
+    +transform-scale
+

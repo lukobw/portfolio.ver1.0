@@ -12,13 +12,38 @@
   border-radius: 7px
   padding: 20px 15px
 
-=transform
+=transform-scale
   img
     transition-duration: 1s
     transition-property: transform
 
     &:hover
       transform: scale(1.3)
+
+=transform-rotate-right
+  img
+    transition-duration: 1s
+    transition-property: transform
+
+    &:hover
+      transform: rotate(45deg)
+
+=transform-rotate-left
+  img
+    transition-duration: 1s
+    transition-property: transform
+
+    &:hover
+      transform: rotate(-45deg)
+
+
+=transform-360
+  img
+    transition-duration: 1s
+    transition-property: transform
+
+    &:hover
+      transform: rotate(360deg)
 
 =clearfix
   &::after,
