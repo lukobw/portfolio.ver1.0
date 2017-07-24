@@ -1,11 +1,9 @@
 @import 'colors'
 
-
 section
   display: flex
   justify-content: center
   padding: 20px
-
 
   .contact
 
@@ -23,7 +21,6 @@ section
       position: absolute
       top: -100px
 
-
   .contact-info
     font-size: 18px
     line-height: 40px
@@ -36,48 +33,24 @@ section
       font-size: 22px
       margin: 0
 
-
     a
       &:hover
         text-decoration: none
 
-    .my-cv
-      color: $black
-      margin: 10px
-
-      &:hover
-        color: $white
-        transition: .5s ease-in-out
-
-
+  .my-cv
+    +contact-icon-hover($white, .5s ease-in-out)
 
   .git
-    color: $black
-    margin: 10px
-
-    &:hover
-      color: #fff
+    +contact-icon-hover($white, 0)
 
   .linkedin
-    color: $black
-    margin: 10px
-
-    &:hover
-      color: #0077B5
+    +contact-icon-hover($linked-hover, 0)
 
   .mail
-    color: $black
-    margin: 10px
-
-    &:hover
-      color: #D24231
+    +contact-icon-hover($mail-hover, 0)
 
   .facebook
-    color: $black
-    margin: 10px
-
-    &:hover
-      color: #3B5998
+    +contact-icon-hover($fb-hover, 0)
 
   .icons
     align-items: center
