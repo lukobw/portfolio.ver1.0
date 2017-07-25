@@ -1,30 +1,28 @@
-@import 'mixins'
-
-
 .technologies
-  background-color: $black
+  background-color: #1c2230
   padding: 18px
 
   .border
     +border
 
   .ability-description
-    color: $black
+    color: $white
     padding-top: 10px
 
   .ability
     text-align: center
 
   .ability-image
-    +transform-rotate-left
+    +transform-360
     margin: 10px
     min-height: 100px
+
 
   .skills
     text-align: center
 
     h2
-      +h2
+      +h2($skills-abils-bgcolor)
       display: inline-block
       position: relative
       top: 15px
@@ -32,3 +30,9 @@
       span
         position: absolute
         top: -50px
+
+.big-container
+  .tech
+    .ability
+      .ability-image
+        +transform-scale
