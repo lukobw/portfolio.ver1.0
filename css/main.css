@@ -231,7 +231,7 @@ section {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 50px auto; }
+    margin: 0 auto; }
   section .contact h1 {
     position: relative; }
   section .contact span {
