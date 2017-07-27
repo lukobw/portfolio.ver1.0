@@ -16,10 +16,9 @@ header {
     background-blend-mode: overlay;
     background-color: #1c2230;
     background-image: url("../img/hands.png");
-    background-position: center bottom;
+    background-position-x: center;
     background-repeat: no-repeat;
-    display: flex;
-    height: 90vh; }
+    height: 95vh; }
   header .about {
     margin: 0 auto;
     max-width: 800px;
@@ -61,6 +60,7 @@ header {
       .big-container .abilities .ability-image img:hover {
         transform: rotate(45deg); }
   .big-container .abilities .skills {
+    height: 0;
     text-align: center; }
     .big-container .abilities .skills h2 {
       background-color: #1c2230;
@@ -68,12 +68,12 @@ header {
       margin: 0;
       padding: 0 13px;
       text-align: center;
+      bottom: 18px;
       display: inline-block;
-      position: relative;
-      top: 15px; }
+      position: relative; }
     .big-container .abilities .skills span {
       position: absolute;
-      top: -70px; }
+      top: -60px; }
   .big-container .abilities .border {
     border: 1px solid #fff;
     border-radius: 7px;
@@ -294,6 +294,7 @@ section {
 footer {
   background-color: #000;
   color: #fff;
+  max-height: 100px;
   text-align: center; }
   footer p {
     font-family: "Roboto", sans-serif;
@@ -327,208 +328,741 @@ footer {
   height: 100%;
   transition: .7s linear; }
 
-@media only screen and (min-width: 1023px) and (max-width: 1441px) {
-  header .main-content {
-    height: 132vh; } }
+@media only screen and (min-width: 2560px) {
+  .description {
+    padding-bottom: 100px; }
+  .main-content {
+    background-position: 50% 30%;
+    background-size: cover; }
+    .main-content .about {
+      max-width: 600px; }
+      .main-content .about img {
+        height: 300px;
+        margin-top: 50px;
+        width: 300px; }
+      .main-content .about p {
+        font-size: 24px;
+        width: 700px; }
+  .big-container .abilities .skills {
+    padding-top: 25px; }
+    .big-container .abilities .skills span {
+      position: absolute;
+      top: -60px; }
+  footer p {
+    font-size: 24px; }
+  section .contact-info {
+    font-size: 24px; }
+    section .contact-info p {
+      font-size: 24px; } }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   header .main-content {
-    height: 132vh; }
+    height: 113vh; }
+  .big-container .abilities .skills {
+    padding-top: 25px; }
+    .big-container .abilities .skills span {
+      position: absolute;
+      top: -70px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header .main-content {
+    height: 110vh; }
   .description h2 {
     margin: 40px 0; }
   .projects {
-    margin: 40px 0; } }
-
-@media only screen and (min-width: 769px) and (max-width: 991px) {
-  .col-m-1 {
-    width: 8.3333333333%; }
-  .big-container .abilities .ability img:hover {
-    transform: none; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .row p {
-    font-size: 21px;
-    margin-left: 25%;
-    max-width: 335px;
-    padding: 0 20px;
-    text-align: justify; }
-  .col-m-2 {
-    width: 16.6666666667%; }
-  .big-container .abilities .ability img:hover {
-    transform: none; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .row p {
-    font-size: 21px;
-    margin-left: 25%;
-    max-width: 335px;
-    padding: 0 20px;
-    text-align: justify; }
-  .col-m-3 {
-    width: 25%; }
-  .big-container .abilities .ability img:hover {
-    transform: none; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .row p {
-    font-size: 21px;
-    margin-left: 25%;
-    max-width: 335px;
-    padding: 0 20px;
-    text-align: justify; }
-  .col-m-4 {
-    width: 33.3333333333%; }
-  .big-container .abilities .ability img:hover {
-    transform: none; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .row p {
-    font-size: 21px;
-    margin-left: 25%;
-    max-width: 335px;
-    padding: 0 20px;
-    text-align: justify; }
-  .col-m-5 {
-    width: 41.6666666667%; }
-  .big-container .abilities .ability img:hover {
-    transform: none; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .row p {
-    font-size: 21px;
-    margin-left: 25%;
-    max-width: 335px;
-    padding: 0 20px;
-    text-align: justify; }
-  .col-m-6 {
-    width: 50%; }
-  .big-container .abilities .ability img:hover {
-    transform: none; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .row p {
-    font-size: 21px;
-    margin-left: 25%;
-    max-width: 335px;
-    padding: 0 20px;
-    text-align: justify; }
-  .col-m-7 {
-    width: 58.3333333333%; }
-  .big-container .abilities .ability img:hover {
-    transform: none; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .row p {
-    font-size: 21px;
-    margin-left: 25%;
-    max-width: 335px;
-    padding: 0 20px;
-    text-align: justify; }
-  .col-m-8 {
-    width: 66.6666666667%; }
-  .big-container .abilities .ability img:hover {
-    transform: none; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .row p {
-    font-size: 21px;
-    margin-left: 25%;
-    max-width: 335px;
-    padding: 0 20px;
-    text-align: justify; }
-  .col-m-9 {
-    width: 75%; }
-  .big-container .abilities .ability img:hover {
-    transform: none; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .row p {
-    font-size: 21px;
-    margin-left: 25%;
-    max-width: 335px;
-    padding: 0 20px;
-    text-align: justify; }
-  .col-m-10 {
-    width: 83.3333333333%; }
-  .big-container .abilities .ability img:hover {
-    transform: none; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .row p {
-    font-size: 21px;
-    margin-left: 25%;
-    max-width: 335px;
-    padding: 0 20px;
-    text-align: justify; }
-  .col-m-11 {
-    width: 91.6666666667%; }
-  .big-container .abilities .ability img:hover {
-    transform: none; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .row p {
-    font-size: 21px;
-    margin-left: 25%;
-    max-width: 335px;
-    padding: 0 20px;
-    text-align: justify; }
-  .col-m-12 {
-    width: 100%; }
-  .big-container .abilities .ability img:hover {
-    transform: none; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .row p {
-    font-size: 21px;
-    margin-left: 25%;
-    max-width: 335px;
-    padding: 0 20px;
-    text-align: justify; } }
+    margin: 40px; } }
 
 @media only screen and (max-width: 768px) {
+  .description {
+    padding-bottom: 50px; } }
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
   .col-m-1 {
     width: 8.3333333333%; }
+  header .about h2 {
+    font-size: 28px;
+    margin: 0 auto;
+    max-width: 418px; }
+  header .about p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 0 auto;
+    max-width: 430px;
+    text-align: justify; }
+  header .main-content {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 160vh; }
+  .big-container .abilities {
+    padding: 20px 10px 0; }
+    .big-container .abilities .border .ability .ability-image img:hover {
+      transform: none; }
+    .big-container .abilities .ability-description {
+      padding-top: 0; }
+    .big-container .abilities .skills span {
+      position: absolute;
+      top: -70px; }
+  .big-container .technologies .border .ability .ability-image img:hover {
+    transform: none; }
+  .big-container .technologies .ability-description {
+    padding-top: 0; }
+  [class*='col-'] {
+    float: none; }
+  .description .projects {
+    border: 1px solid #fff;
+    border-radius: 7px;
+    display: grid;
+    max-width: 425px;
+    padding: 50px; }
+  img {
+    max-width: 320px; }
+  .technologies .skills h2 {
+    font-size: 4vw; }
+  .abilities .skills h2 {
+    font-size: 4vw; }
+  .tools h2 {
+    font-size: 4vw; }
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+  .navbar-inverse .navbar-nav li a:hover {
+    background-color: #222;
+    transition: none; }
+  .contact-tech {
+    margin-top: 0; }
+  .projects {
+    margin-bottom: 0; }
+  .icons i:hover {
+    color: #000; }
+  section .contact-info .my-cv:hover {
+    color: #000; }
   .col-m-2 {
     width: 16.6666666667%; }
+  header .about h2 {
+    font-size: 28px;
+    margin: 0 auto;
+    max-width: 418px; }
+  header .about p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 0 auto;
+    max-width: 430px;
+    text-align: justify; }
+  header .main-content {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 160vh; }
+  .big-container .abilities {
+    padding: 20px 10px 0; }
+    .big-container .abilities .border .ability .ability-image img:hover {
+      transform: none; }
+    .big-container .abilities .ability-description {
+      padding-top: 0; }
+    .big-container .abilities .skills span {
+      position: absolute;
+      top: -70px; }
+  .big-container .technologies .border .ability .ability-image img:hover {
+    transform: none; }
+  .big-container .technologies .ability-description {
+    padding-top: 0; }
+  [class*='col-'] {
+    float: none; }
+  .description .projects {
+    border: 1px solid #fff;
+    border-radius: 7px;
+    display: grid;
+    max-width: 425px;
+    padding: 50px; }
+  img {
+    max-width: 320px; }
+  .technologies .skills h2 {
+    font-size: 4vw; }
+  .abilities .skills h2 {
+    font-size: 4vw; }
+  .tools h2 {
+    font-size: 4vw; }
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+  .navbar-inverse .navbar-nav li a:hover {
+    background-color: #222;
+    transition: none; }
+  .contact-tech {
+    margin-top: 0; }
+  .projects {
+    margin-bottom: 0; }
+  .icons i:hover {
+    color: #000; }
+  section .contact-info .my-cv:hover {
+    color: #000; }
   .col-m-3 {
     width: 25%; }
+  header .about h2 {
+    font-size: 28px;
+    margin: 0 auto;
+    max-width: 418px; }
+  header .about p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 0 auto;
+    max-width: 430px;
+    text-align: justify; }
+  header .main-content {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 160vh; }
+  .big-container .abilities {
+    padding: 20px 10px 0; }
+    .big-container .abilities .border .ability .ability-image img:hover {
+      transform: none; }
+    .big-container .abilities .ability-description {
+      padding-top: 0; }
+    .big-container .abilities .skills span {
+      position: absolute;
+      top: -70px; }
+  .big-container .technologies .border .ability .ability-image img:hover {
+    transform: none; }
+  .big-container .technologies .ability-description {
+    padding-top: 0; }
+  [class*='col-'] {
+    float: none; }
+  .description .projects {
+    border: 1px solid #fff;
+    border-radius: 7px;
+    display: grid;
+    max-width: 425px;
+    padding: 50px; }
+  img {
+    max-width: 320px; }
+  .technologies .skills h2 {
+    font-size: 4vw; }
+  .abilities .skills h2 {
+    font-size: 4vw; }
+  .tools h2 {
+    font-size: 4vw; }
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+  .navbar-inverse .navbar-nav li a:hover {
+    background-color: #222;
+    transition: none; }
+  .contact-tech {
+    margin-top: 0; }
+  .projects {
+    margin-bottom: 0; }
+  .icons i:hover {
+    color: #000; }
+  section .contact-info .my-cv:hover {
+    color: #000; }
   .col-m-4 {
     width: 33.3333333333%; }
+  header .about h2 {
+    font-size: 28px;
+    margin: 0 auto;
+    max-width: 418px; }
+  header .about p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 0 auto;
+    max-width: 430px;
+    text-align: justify; }
+  header .main-content {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 160vh; }
+  .big-container .abilities {
+    padding: 20px 10px 0; }
+    .big-container .abilities .border .ability .ability-image img:hover {
+      transform: none; }
+    .big-container .abilities .ability-description {
+      padding-top: 0; }
+    .big-container .abilities .skills span {
+      position: absolute;
+      top: -70px; }
+  .big-container .technologies .border .ability .ability-image img:hover {
+    transform: none; }
+  .big-container .technologies .ability-description {
+    padding-top: 0; }
+  [class*='col-'] {
+    float: none; }
+  .description .projects {
+    border: 1px solid #fff;
+    border-radius: 7px;
+    display: grid;
+    max-width: 425px;
+    padding: 50px; }
+  img {
+    max-width: 320px; }
+  .technologies .skills h2 {
+    font-size: 4vw; }
+  .abilities .skills h2 {
+    font-size: 4vw; }
+  .tools h2 {
+    font-size: 4vw; }
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+  .navbar-inverse .navbar-nav li a:hover {
+    background-color: #222;
+    transition: none; }
+  .contact-tech {
+    margin-top: 0; }
+  .projects {
+    margin-bottom: 0; }
+  .icons i:hover {
+    color: #000; }
+  section .contact-info .my-cv:hover {
+    color: #000; }
   .col-m-5 {
     width: 41.6666666667%; }
+  header .about h2 {
+    font-size: 28px;
+    margin: 0 auto;
+    max-width: 418px; }
+  header .about p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 0 auto;
+    max-width: 430px;
+    text-align: justify; }
+  header .main-content {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 160vh; }
+  .big-container .abilities {
+    padding: 20px 10px 0; }
+    .big-container .abilities .border .ability .ability-image img:hover {
+      transform: none; }
+    .big-container .abilities .ability-description {
+      padding-top: 0; }
+    .big-container .abilities .skills span {
+      position: absolute;
+      top: -70px; }
+  .big-container .technologies .border .ability .ability-image img:hover {
+    transform: none; }
+  .big-container .technologies .ability-description {
+    padding-top: 0; }
+  [class*='col-'] {
+    float: none; }
+  .description .projects {
+    border: 1px solid #fff;
+    border-radius: 7px;
+    display: grid;
+    max-width: 425px;
+    padding: 50px; }
+  img {
+    max-width: 320px; }
+  .technologies .skills h2 {
+    font-size: 4vw; }
+  .abilities .skills h2 {
+    font-size: 4vw; }
+  .tools h2 {
+    font-size: 4vw; }
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+  .navbar-inverse .navbar-nav li a:hover {
+    background-color: #222;
+    transition: none; }
+  .contact-tech {
+    margin-top: 0; }
+  .projects {
+    margin-bottom: 0; }
+  .icons i:hover {
+    color: #000; }
+  section .contact-info .my-cv:hover {
+    color: #000; }
   .col-m-6 {
     width: 50%; }
+  header .about h2 {
+    font-size: 28px;
+    margin: 0 auto;
+    max-width: 418px; }
+  header .about p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 0 auto;
+    max-width: 430px;
+    text-align: justify; }
+  header .main-content {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 160vh; }
+  .big-container .abilities {
+    padding: 20px 10px 0; }
+    .big-container .abilities .border .ability .ability-image img:hover {
+      transform: none; }
+    .big-container .abilities .ability-description {
+      padding-top: 0; }
+    .big-container .abilities .skills span {
+      position: absolute;
+      top: -70px; }
+  .big-container .technologies .border .ability .ability-image img:hover {
+    transform: none; }
+  .big-container .technologies .ability-description {
+    padding-top: 0; }
+  [class*='col-'] {
+    float: none; }
+  .description .projects {
+    border: 1px solid #fff;
+    border-radius: 7px;
+    display: grid;
+    max-width: 425px;
+    padding: 50px; }
+  img {
+    max-width: 320px; }
+  .technologies .skills h2 {
+    font-size: 4vw; }
+  .abilities .skills h2 {
+    font-size: 4vw; }
+  .tools h2 {
+    font-size: 4vw; }
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+  .navbar-inverse .navbar-nav li a:hover {
+    background-color: #222;
+    transition: none; }
+  .contact-tech {
+    margin-top: 0; }
+  .projects {
+    margin-bottom: 0; }
+  .icons i:hover {
+    color: #000; }
+  section .contact-info .my-cv:hover {
+    color: #000; }
   .col-m-7 {
     width: 58.3333333333%; }
+  header .about h2 {
+    font-size: 28px;
+    margin: 0 auto;
+    max-width: 418px; }
+  header .about p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 0 auto;
+    max-width: 430px;
+    text-align: justify; }
+  header .main-content {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 160vh; }
+  .big-container .abilities {
+    padding: 20px 10px 0; }
+    .big-container .abilities .border .ability .ability-image img:hover {
+      transform: none; }
+    .big-container .abilities .ability-description {
+      padding-top: 0; }
+    .big-container .abilities .skills span {
+      position: absolute;
+      top: -70px; }
+  .big-container .technologies .border .ability .ability-image img:hover {
+    transform: none; }
+  .big-container .technologies .ability-description {
+    padding-top: 0; }
+  [class*='col-'] {
+    float: none; }
+  .description .projects {
+    border: 1px solid #fff;
+    border-radius: 7px;
+    display: grid;
+    max-width: 425px;
+    padding: 50px; }
+  img {
+    max-width: 320px; }
+  .technologies .skills h2 {
+    font-size: 4vw; }
+  .abilities .skills h2 {
+    font-size: 4vw; }
+  .tools h2 {
+    font-size: 4vw; }
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+  .navbar-inverse .navbar-nav li a:hover {
+    background-color: #222;
+    transition: none; }
+  .contact-tech {
+    margin-top: 0; }
+  .projects {
+    margin-bottom: 0; }
+  .icons i:hover {
+    color: #000; }
+  section .contact-info .my-cv:hover {
+    color: #000; }
   .col-m-8 {
     width: 66.6666666667%; }
+  header .about h2 {
+    font-size: 28px;
+    margin: 0 auto;
+    max-width: 418px; }
+  header .about p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 0 auto;
+    max-width: 430px;
+    text-align: justify; }
+  header .main-content {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 160vh; }
+  .big-container .abilities {
+    padding: 20px 10px 0; }
+    .big-container .abilities .border .ability .ability-image img:hover {
+      transform: none; }
+    .big-container .abilities .ability-description {
+      padding-top: 0; }
+    .big-container .abilities .skills span {
+      position: absolute;
+      top: -70px; }
+  .big-container .technologies .border .ability .ability-image img:hover {
+    transform: none; }
+  .big-container .technologies .ability-description {
+    padding-top: 0; }
+  [class*='col-'] {
+    float: none; }
+  .description .projects {
+    border: 1px solid #fff;
+    border-radius: 7px;
+    display: grid;
+    max-width: 425px;
+    padding: 50px; }
+  img {
+    max-width: 320px; }
+  .technologies .skills h2 {
+    font-size: 4vw; }
+  .abilities .skills h2 {
+    font-size: 4vw; }
+  .tools h2 {
+    font-size: 4vw; }
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+  .navbar-inverse .navbar-nav li a:hover {
+    background-color: #222;
+    transition: none; }
+  .contact-tech {
+    margin-top: 0; }
+  .projects {
+    margin-bottom: 0; }
+  .icons i:hover {
+    color: #000; }
+  section .contact-info .my-cv:hover {
+    color: #000; }
   .col-m-9 {
     width: 75%; }
+  header .about h2 {
+    font-size: 28px;
+    margin: 0 auto;
+    max-width: 418px; }
+  header .about p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 0 auto;
+    max-width: 430px;
+    text-align: justify; }
+  header .main-content {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 160vh; }
+  .big-container .abilities {
+    padding: 20px 10px 0; }
+    .big-container .abilities .border .ability .ability-image img:hover {
+      transform: none; }
+    .big-container .abilities .ability-description {
+      padding-top: 0; }
+    .big-container .abilities .skills span {
+      position: absolute;
+      top: -70px; }
+  .big-container .technologies .border .ability .ability-image img:hover {
+    transform: none; }
+  .big-container .technologies .ability-description {
+    padding-top: 0; }
+  [class*='col-'] {
+    float: none; }
+  .description .projects {
+    border: 1px solid #fff;
+    border-radius: 7px;
+    display: grid;
+    max-width: 425px;
+    padding: 50px; }
+  img {
+    max-width: 320px; }
+  .technologies .skills h2 {
+    font-size: 4vw; }
+  .abilities .skills h2 {
+    font-size: 4vw; }
+  .tools h2 {
+    font-size: 4vw; }
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+  .navbar-inverse .navbar-nav li a:hover {
+    background-color: #222;
+    transition: none; }
+  .contact-tech {
+    margin-top: 0; }
+  .projects {
+    margin-bottom: 0; }
+  .icons i:hover {
+    color: #000; }
+  section .contact-info .my-cv:hover {
+    color: #000; }
   .col-m-10 {
     width: 83.3333333333%; }
+  header .about h2 {
+    font-size: 28px;
+    margin: 0 auto;
+    max-width: 418px; }
+  header .about p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 0 auto;
+    max-width: 430px;
+    text-align: justify; }
+  header .main-content {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 160vh; }
+  .big-container .abilities {
+    padding: 20px 10px 0; }
+    .big-container .abilities .border .ability .ability-image img:hover {
+      transform: none; }
+    .big-container .abilities .ability-description {
+      padding-top: 0; }
+    .big-container .abilities .skills span {
+      position: absolute;
+      top: -70px; }
+  .big-container .technologies .border .ability .ability-image img:hover {
+    transform: none; }
+  .big-container .technologies .ability-description {
+    padding-top: 0; }
+  [class*='col-'] {
+    float: none; }
+  .description .projects {
+    border: 1px solid #fff;
+    border-radius: 7px;
+    display: grid;
+    max-width: 425px;
+    padding: 50px; }
+  img {
+    max-width: 320px; }
+  .technologies .skills h2 {
+    font-size: 4vw; }
+  .abilities .skills h2 {
+    font-size: 4vw; }
+  .tools h2 {
+    font-size: 4vw; }
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+  .navbar-inverse .navbar-nav li a:hover {
+    background-color: #222;
+    transition: none; }
+  .contact-tech {
+    margin-top: 0; }
+  .projects {
+    margin-bottom: 0; }
+  .icons i:hover {
+    color: #000; }
+  section .contact-info .my-cv:hover {
+    color: #000; }
   .col-m-11 {
     width: 91.6666666667%; }
+  header .about h2 {
+    font-size: 28px;
+    margin: 0 auto;
+    max-width: 418px; }
+  header .about p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 0 auto;
+    max-width: 430px;
+    text-align: justify; }
+  header .main-content {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 160vh; }
+  .big-container .abilities {
+    padding: 20px 10px 0; }
+    .big-container .abilities .border .ability .ability-image img:hover {
+      transform: none; }
+    .big-container .abilities .ability-description {
+      padding-top: 0; }
+    .big-container .abilities .skills span {
+      position: absolute;
+      top: -70px; }
+  .big-container .technologies .border .ability .ability-image img:hover {
+    transform: none; }
+  .big-container .technologies .ability-description {
+    padding-top: 0; }
+  [class*='col-'] {
+    float: none; }
+  .description .projects {
+    border: 1px solid #fff;
+    border-radius: 7px;
+    display: grid;
+    max-width: 425px;
+    padding: 50px; }
+  img {
+    max-width: 320px; }
+  .technologies .skills h2 {
+    font-size: 4vw; }
+  .abilities .skills h2 {
+    font-size: 4vw; }
+  .tools h2 {
+    font-size: 4vw; }
+  .navbar,
+  .navbar-inverse {
+    padding-right: 20px; }
+  .navbar-inverse .navbar-nav li a:hover {
+    background-color: #222;
+    transition: none; }
+  .contact-tech {
+    margin-top: 0; }
+  .projects {
+    margin-bottom: 0; }
+  .icons i:hover {
+    color: #000; }
+  section .contact-info .my-cv:hover {
+    color: #000; }
   .col-m-12 {
     width: 100%; }
-  .col-s-1 {
-    width: 8.3333333333%; }
   header .about h2 {
     font-size: 28px;
+    margin: 0 auto;
     max-width: 418px; }
   header .about p {
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 1px;
-    margin-left: 5%;
-    max-width: 335px;
-    text-align: justify;
-    word-break: keep-all;
-    word-spacing: -3px; }
+    margin-left: 0 auto;
+    max-width: 430px;
+    text-align: justify; }
   header .main-content {
-    height: 137vh; }
-  .big-container .abilities .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .abilities .ability-description {
-    padding-top: 0; }
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 160vh; }
+  .big-container .abilities {
+    padding: 20px 10px 0; }
+    .big-container .abilities .border .ability .ability-image img:hover {
+      transform: none; }
+    .big-container .abilities .ability-description {
+      padding-top: 0; }
+    .big-container .abilities .skills span {
+      position: absolute;
+      top: -70px; }
   .big-container .technologies .border .ability .ability-image img:hover {
     transform: none; }
   .big-container .technologies .ability-description {
@@ -536,582 +1070,11 @@ footer {
   [class*='col-'] {
     float: none; }
   .description .projects {
-    border: 0;
+    border: 1px solid #fff;
+    border-radius: 7px;
     display: grid;
     max-width: 425px;
-    padding: 15px 0; }
-  img {
-    max-width: 320px; }
-  .technologies .skills h2 {
-    font-size: 4vw; }
-  .abilities .skills h2 {
-    font-size: 4vw; }
-  .tools h2 {
-    font-size: 4vw; }
-  .navbar,
-  .navbar-inverse {
-    padding-right: 20px; }
-  .navbar-inverse .navbar-nav li a:hover {
-    background-color: #222;
-    transition: none; }
-  .contact-tech {
-    margin-top: 0; }
-  .projects {
-    margin-bottom: 0; }
-  .icons i:hover {
-    color: #000; }
-  section .contact-info .my-cv:hover {
-    color: #000; }
-  .col-s-2 {
-    width: 16.6666666667%; }
-  header .about h2 {
-    font-size: 28px;
-    max-width: 418px; }
-  header .about p {
-    font-size: 22px;
-    letter-spacing: 1px;
-    margin-left: 5%;
-    max-width: 335px;
-    text-align: justify;
-    word-break: keep-all;
-    word-spacing: -3px; }
-  header .main-content {
-    height: 137vh; }
-  .big-container .abilities .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .abilities .ability-description {
-    padding-top: 0; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .technologies .ability-description {
-    padding-top: 0; }
-  [class*='col-'] {
-    float: none; }
-  .description .projects {
-    border: 0;
-    display: grid;
-    max-width: 425px;
-    padding: 15px 0; }
-  img {
-    max-width: 320px; }
-  .technologies .skills h2 {
-    font-size: 4vw; }
-  .abilities .skills h2 {
-    font-size: 4vw; }
-  .tools h2 {
-    font-size: 4vw; }
-  .navbar,
-  .navbar-inverse {
-    padding-right: 20px; }
-  .navbar-inverse .navbar-nav li a:hover {
-    background-color: #222;
-    transition: none; }
-  .contact-tech {
-    margin-top: 0; }
-  .projects {
-    margin-bottom: 0; }
-  .icons i:hover {
-    color: #000; }
-  section .contact-info .my-cv:hover {
-    color: #000; }
-  .col-s-3 {
-    width: 25%; }
-  header .about h2 {
-    font-size: 28px;
-    max-width: 418px; }
-  header .about p {
-    font-size: 22px;
-    letter-spacing: 1px;
-    margin-left: 5%;
-    max-width: 335px;
-    text-align: justify;
-    word-break: keep-all;
-    word-spacing: -3px; }
-  header .main-content {
-    height: 137vh; }
-  .big-container .abilities .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .abilities .ability-description {
-    padding-top: 0; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .technologies .ability-description {
-    padding-top: 0; }
-  [class*='col-'] {
-    float: none; }
-  .description .projects {
-    border: 0;
-    display: grid;
-    max-width: 425px;
-    padding: 15px 0; }
-  img {
-    max-width: 320px; }
-  .technologies .skills h2 {
-    font-size: 4vw; }
-  .abilities .skills h2 {
-    font-size: 4vw; }
-  .tools h2 {
-    font-size: 4vw; }
-  .navbar,
-  .navbar-inverse {
-    padding-right: 20px; }
-  .navbar-inverse .navbar-nav li a:hover {
-    background-color: #222;
-    transition: none; }
-  .contact-tech {
-    margin-top: 0; }
-  .projects {
-    margin-bottom: 0; }
-  .icons i:hover {
-    color: #000; }
-  section .contact-info .my-cv:hover {
-    color: #000; }
-  .col-s-4 {
-    width: 33.3333333333%; }
-  header .about h2 {
-    font-size: 28px;
-    max-width: 418px; }
-  header .about p {
-    font-size: 22px;
-    letter-spacing: 1px;
-    margin-left: 5%;
-    max-width: 335px;
-    text-align: justify;
-    word-break: keep-all;
-    word-spacing: -3px; }
-  header .main-content {
-    height: 137vh; }
-  .big-container .abilities .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .abilities .ability-description {
-    padding-top: 0; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .technologies .ability-description {
-    padding-top: 0; }
-  [class*='col-'] {
-    float: none; }
-  .description .projects {
-    border: 0;
-    display: grid;
-    max-width: 425px;
-    padding: 15px 0; }
-  img {
-    max-width: 320px; }
-  .technologies .skills h2 {
-    font-size: 4vw; }
-  .abilities .skills h2 {
-    font-size: 4vw; }
-  .tools h2 {
-    font-size: 4vw; }
-  .navbar,
-  .navbar-inverse {
-    padding-right: 20px; }
-  .navbar-inverse .navbar-nav li a:hover {
-    background-color: #222;
-    transition: none; }
-  .contact-tech {
-    margin-top: 0; }
-  .projects {
-    margin-bottom: 0; }
-  .icons i:hover {
-    color: #000; }
-  section .contact-info .my-cv:hover {
-    color: #000; }
-  .col-s-5 {
-    width: 41.6666666667%; }
-  header .about h2 {
-    font-size: 28px;
-    max-width: 418px; }
-  header .about p {
-    font-size: 22px;
-    letter-spacing: 1px;
-    margin-left: 5%;
-    max-width: 335px;
-    text-align: justify;
-    word-break: keep-all;
-    word-spacing: -3px; }
-  header .main-content {
-    height: 137vh; }
-  .big-container .abilities .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .abilities .ability-description {
-    padding-top: 0; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .technologies .ability-description {
-    padding-top: 0; }
-  [class*='col-'] {
-    float: none; }
-  .description .projects {
-    border: 0;
-    display: grid;
-    max-width: 425px;
-    padding: 15px 0; }
-  img {
-    max-width: 320px; }
-  .technologies .skills h2 {
-    font-size: 4vw; }
-  .abilities .skills h2 {
-    font-size: 4vw; }
-  .tools h2 {
-    font-size: 4vw; }
-  .navbar,
-  .navbar-inverse {
-    padding-right: 20px; }
-  .navbar-inverse .navbar-nav li a:hover {
-    background-color: #222;
-    transition: none; }
-  .contact-tech {
-    margin-top: 0; }
-  .projects {
-    margin-bottom: 0; }
-  .icons i:hover {
-    color: #000; }
-  section .contact-info .my-cv:hover {
-    color: #000; }
-  .col-s-6 {
-    width: 50%; }
-  header .about h2 {
-    font-size: 28px;
-    max-width: 418px; }
-  header .about p {
-    font-size: 22px;
-    letter-spacing: 1px;
-    margin-left: 5%;
-    max-width: 335px;
-    text-align: justify;
-    word-break: keep-all;
-    word-spacing: -3px; }
-  header .main-content {
-    height: 137vh; }
-  .big-container .abilities .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .abilities .ability-description {
-    padding-top: 0; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .technologies .ability-description {
-    padding-top: 0; }
-  [class*='col-'] {
-    float: none; }
-  .description .projects {
-    border: 0;
-    display: grid;
-    max-width: 425px;
-    padding: 15px 0; }
-  img {
-    max-width: 320px; }
-  .technologies .skills h2 {
-    font-size: 4vw; }
-  .abilities .skills h2 {
-    font-size: 4vw; }
-  .tools h2 {
-    font-size: 4vw; }
-  .navbar,
-  .navbar-inverse {
-    padding-right: 20px; }
-  .navbar-inverse .navbar-nav li a:hover {
-    background-color: #222;
-    transition: none; }
-  .contact-tech {
-    margin-top: 0; }
-  .projects {
-    margin-bottom: 0; }
-  .icons i:hover {
-    color: #000; }
-  section .contact-info .my-cv:hover {
-    color: #000; }
-  .col-s-7 {
-    width: 58.3333333333%; }
-  header .about h2 {
-    font-size: 28px;
-    max-width: 418px; }
-  header .about p {
-    font-size: 22px;
-    letter-spacing: 1px;
-    margin-left: 5%;
-    max-width: 335px;
-    text-align: justify;
-    word-break: keep-all;
-    word-spacing: -3px; }
-  header .main-content {
-    height: 137vh; }
-  .big-container .abilities .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .abilities .ability-description {
-    padding-top: 0; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .technologies .ability-description {
-    padding-top: 0; }
-  [class*='col-'] {
-    float: none; }
-  .description .projects {
-    border: 0;
-    display: grid;
-    max-width: 425px;
-    padding: 15px 0; }
-  img {
-    max-width: 320px; }
-  .technologies .skills h2 {
-    font-size: 4vw; }
-  .abilities .skills h2 {
-    font-size: 4vw; }
-  .tools h2 {
-    font-size: 4vw; }
-  .navbar,
-  .navbar-inverse {
-    padding-right: 20px; }
-  .navbar-inverse .navbar-nav li a:hover {
-    background-color: #222;
-    transition: none; }
-  .contact-tech {
-    margin-top: 0; }
-  .projects {
-    margin-bottom: 0; }
-  .icons i:hover {
-    color: #000; }
-  section .contact-info .my-cv:hover {
-    color: #000; }
-  .col-s-8 {
-    width: 66.6666666667%; }
-  header .about h2 {
-    font-size: 28px;
-    max-width: 418px; }
-  header .about p {
-    font-size: 22px;
-    letter-spacing: 1px;
-    margin-left: 5%;
-    max-width: 335px;
-    text-align: justify;
-    word-break: keep-all;
-    word-spacing: -3px; }
-  header .main-content {
-    height: 137vh; }
-  .big-container .abilities .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .abilities .ability-description {
-    padding-top: 0; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .technologies .ability-description {
-    padding-top: 0; }
-  [class*='col-'] {
-    float: none; }
-  .description .projects {
-    border: 0;
-    display: grid;
-    max-width: 425px;
-    padding: 15px 0; }
-  img {
-    max-width: 320px; }
-  .technologies .skills h2 {
-    font-size: 4vw; }
-  .abilities .skills h2 {
-    font-size: 4vw; }
-  .tools h2 {
-    font-size: 4vw; }
-  .navbar,
-  .navbar-inverse {
-    padding-right: 20px; }
-  .navbar-inverse .navbar-nav li a:hover {
-    background-color: #222;
-    transition: none; }
-  .contact-tech {
-    margin-top: 0; }
-  .projects {
-    margin-bottom: 0; }
-  .icons i:hover {
-    color: #000; }
-  section .contact-info .my-cv:hover {
-    color: #000; }
-  .col-s-9 {
-    width: 75%; }
-  header .about h2 {
-    font-size: 28px;
-    max-width: 418px; }
-  header .about p {
-    font-size: 22px;
-    letter-spacing: 1px;
-    margin-left: 5%;
-    max-width: 335px;
-    text-align: justify;
-    word-break: keep-all;
-    word-spacing: -3px; }
-  header .main-content {
-    height: 137vh; }
-  .big-container .abilities .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .abilities .ability-description {
-    padding-top: 0; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .technologies .ability-description {
-    padding-top: 0; }
-  [class*='col-'] {
-    float: none; }
-  .description .projects {
-    border: 0;
-    display: grid;
-    max-width: 425px;
-    padding: 15px 0; }
-  img {
-    max-width: 320px; }
-  .technologies .skills h2 {
-    font-size: 4vw; }
-  .abilities .skills h2 {
-    font-size: 4vw; }
-  .tools h2 {
-    font-size: 4vw; }
-  .navbar,
-  .navbar-inverse {
-    padding-right: 20px; }
-  .navbar-inverse .navbar-nav li a:hover {
-    background-color: #222;
-    transition: none; }
-  .contact-tech {
-    margin-top: 0; }
-  .projects {
-    margin-bottom: 0; }
-  .icons i:hover {
-    color: #000; }
-  section .contact-info .my-cv:hover {
-    color: #000; }
-  .col-s-10 {
-    width: 83.3333333333%; }
-  header .about h2 {
-    font-size: 28px;
-    max-width: 418px; }
-  header .about p {
-    font-size: 22px;
-    letter-spacing: 1px;
-    margin-left: 5%;
-    max-width: 335px;
-    text-align: justify;
-    word-break: keep-all;
-    word-spacing: -3px; }
-  header .main-content {
-    height: 137vh; }
-  .big-container .abilities .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .abilities .ability-description {
-    padding-top: 0; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .technologies .ability-description {
-    padding-top: 0; }
-  [class*='col-'] {
-    float: none; }
-  .description .projects {
-    border: 0;
-    display: grid;
-    max-width: 425px;
-    padding: 15px 0; }
-  img {
-    max-width: 320px; }
-  .technologies .skills h2 {
-    font-size: 4vw; }
-  .abilities .skills h2 {
-    font-size: 4vw; }
-  .tools h2 {
-    font-size: 4vw; }
-  .navbar,
-  .navbar-inverse {
-    padding-right: 20px; }
-  .navbar-inverse .navbar-nav li a:hover {
-    background-color: #222;
-    transition: none; }
-  .contact-tech {
-    margin-top: 0; }
-  .projects {
-    margin-bottom: 0; }
-  .icons i:hover {
-    color: #000; }
-  section .contact-info .my-cv:hover {
-    color: #000; }
-  .col-s-11 {
-    width: 91.6666666667%; }
-  header .about h2 {
-    font-size: 28px;
-    max-width: 418px; }
-  header .about p {
-    font-size: 22px;
-    letter-spacing: 1px;
-    margin-left: 5%;
-    max-width: 335px;
-    text-align: justify;
-    word-break: keep-all;
-    word-spacing: -3px; }
-  header .main-content {
-    height: 137vh; }
-  .big-container .abilities .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .abilities .ability-description {
-    padding-top: 0; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .technologies .ability-description {
-    padding-top: 0; }
-  [class*='col-'] {
-    float: none; }
-  .description .projects {
-    border: 0;
-    display: grid;
-    max-width: 425px;
-    padding: 15px 0; }
-  img {
-    max-width: 320px; }
-  .technologies .skills h2 {
-    font-size: 4vw; }
-  .abilities .skills h2 {
-    font-size: 4vw; }
-  .tools h2 {
-    font-size: 4vw; }
-  .navbar,
-  .navbar-inverse {
-    padding-right: 20px; }
-  .navbar-inverse .navbar-nav li a:hover {
-    background-color: #222;
-    transition: none; }
-  .contact-tech {
-    margin-top: 0; }
-  .projects {
-    margin-bottom: 0; }
-  .icons i:hover {
-    color: #000; }
-  section .contact-info .my-cv:hover {
-    color: #000; }
-  .col-s-12 {
-    width: 100%; }
-  header .about h2 {
-    font-size: 28px;
-    max-width: 418px; }
-  header .about p {
-    font-size: 22px;
-    letter-spacing: 1px;
-    margin-left: 5%;
-    max-width: 335px;
-    text-align: justify;
-    word-break: keep-all;
-    word-spacing: -3px; }
-  header .main-content {
-    height: 137vh; }
-  .big-container .abilities .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .abilities .ability-description {
-    padding-top: 0; }
-  .big-container .technologies .border .ability .ability-image img:hover {
-    transform: none; }
-  .big-container .technologies .ability-description {
-    padding-top: 0; }
-  [class*='col-'] {
-    float: none; }
-  .description .projects {
-    border: 0;
-    display: grid;
-    max-width: 425px;
-    padding: 15px 0; }
+    padding: 50px; }
   img {
     max-width: 320px; }
   .technologies .skills h2 {
@@ -1135,6 +1098,11 @@ footer {
   section .contact-info .my-cv:hover {
     color: #000; } }
 
+@media only screen and (min-width: 325px) and (max-width: 375px) {
+  .box .abilities .skills h2 span {
+    position: absolute;
+    top: -70px; } }
+
 @media only screen and (max-width: 425px) {
   .col-s-1 {
     width: 8.3333333333%; }
@@ -1147,12 +1115,19 @@ footer {
     margin: 0 auto;
     padding-bottom: 0;
     white-space: pre-line; }
+  .technologies h2 {
+    font-size: 18px; }
   .technologies .skills h2 {
     position: relative;
     top: 15px;
     vertical-align: middle; }
   .box .abilities .skills h2 {
-    vertical-align: super; }
+    bottom: 8px;
+    font-size: 18px;
+    position: relative; }
+    .box .abilities .skills h2 span {
+      bottom: -70px;
+      position: absolute; }
   .box .abilities .tools h2 {
     position: relative;
     top: 10px;
@@ -1160,8 +1135,12 @@ footer {
   section .contact img {
     height: 200px;
     width: 200px; }
+  section .contact-info {
+    font-size: 16px; }
+    section .contact-info p {
+      font-size: 16px; }
   .description h2 {
-    font-size: 36px;
+    font-size: 24px;
     margin: 30px 0; }
   .description .projects {
     border: 0;
@@ -1192,12 +1171,19 @@ footer {
     margin: 0 auto;
     padding-bottom: 0;
     white-space: pre-line; }
+  .technologies h2 {
+    font-size: 18px; }
   .technologies .skills h2 {
     position: relative;
     top: 15px;
     vertical-align: middle; }
   .box .abilities .skills h2 {
-    vertical-align: super; }
+    bottom: 8px;
+    font-size: 18px;
+    position: relative; }
+    .box .abilities .skills h2 span {
+      bottom: -70px;
+      position: absolute; }
   .box .abilities .tools h2 {
     position: relative;
     top: 10px;
@@ -1205,8 +1191,12 @@ footer {
   section .contact img {
     height: 200px;
     width: 200px; }
+  section .contact-info {
+    font-size: 16px; }
+    section .contact-info p {
+      font-size: 16px; }
   .description h2 {
-    font-size: 36px;
+    font-size: 24px;
     margin: 30px 0; }
   .description .projects {
     border: 0;
@@ -1237,12 +1227,19 @@ footer {
     margin: 0 auto;
     padding-bottom: 0;
     white-space: pre-line; }
+  .technologies h2 {
+    font-size: 18px; }
   .technologies .skills h2 {
     position: relative;
     top: 15px;
     vertical-align: middle; }
   .box .abilities .skills h2 {
-    vertical-align: super; }
+    bottom: 8px;
+    font-size: 18px;
+    position: relative; }
+    .box .abilities .skills h2 span {
+      bottom: -70px;
+      position: absolute; }
   .box .abilities .tools h2 {
     position: relative;
     top: 10px;
@@ -1250,8 +1247,12 @@ footer {
   section .contact img {
     height: 200px;
     width: 200px; }
+  section .contact-info {
+    font-size: 16px; }
+    section .contact-info p {
+      font-size: 16px; }
   .description h2 {
-    font-size: 36px;
+    font-size: 24px;
     margin: 30px 0; }
   .description .projects {
     border: 0;
@@ -1282,12 +1283,19 @@ footer {
     margin: 0 auto;
     padding-bottom: 0;
     white-space: pre-line; }
+  .technologies h2 {
+    font-size: 18px; }
   .technologies .skills h2 {
     position: relative;
     top: 15px;
     vertical-align: middle; }
   .box .abilities .skills h2 {
-    vertical-align: super; }
+    bottom: 8px;
+    font-size: 18px;
+    position: relative; }
+    .box .abilities .skills h2 span {
+      bottom: -70px;
+      position: absolute; }
   .box .abilities .tools h2 {
     position: relative;
     top: 10px;
@@ -1295,8 +1303,12 @@ footer {
   section .contact img {
     height: 200px;
     width: 200px; }
+  section .contact-info {
+    font-size: 16px; }
+    section .contact-info p {
+      font-size: 16px; }
   .description h2 {
-    font-size: 36px;
+    font-size: 24px;
     margin: 30px 0; }
   .description .projects {
     border: 0;
@@ -1327,12 +1339,19 @@ footer {
     margin: 0 auto;
     padding-bottom: 0;
     white-space: pre-line; }
+  .technologies h2 {
+    font-size: 18px; }
   .technologies .skills h2 {
     position: relative;
     top: 15px;
     vertical-align: middle; }
   .box .abilities .skills h2 {
-    vertical-align: super; }
+    bottom: 8px;
+    font-size: 18px;
+    position: relative; }
+    .box .abilities .skills h2 span {
+      bottom: -70px;
+      position: absolute; }
   .box .abilities .tools h2 {
     position: relative;
     top: 10px;
@@ -1340,8 +1359,12 @@ footer {
   section .contact img {
     height: 200px;
     width: 200px; }
+  section .contact-info {
+    font-size: 16px; }
+    section .contact-info p {
+      font-size: 16px; }
   .description h2 {
-    font-size: 36px;
+    font-size: 24px;
     margin: 30px 0; }
   .description .projects {
     border: 0;
@@ -1372,12 +1395,19 @@ footer {
     margin: 0 auto;
     padding-bottom: 0;
     white-space: pre-line; }
+  .technologies h2 {
+    font-size: 18px; }
   .technologies .skills h2 {
     position: relative;
     top: 15px;
     vertical-align: middle; }
   .box .abilities .skills h2 {
-    vertical-align: super; }
+    bottom: 8px;
+    font-size: 18px;
+    position: relative; }
+    .box .abilities .skills h2 span {
+      bottom: -70px;
+      position: absolute; }
   .box .abilities .tools h2 {
     position: relative;
     top: 10px;
@@ -1385,8 +1415,12 @@ footer {
   section .contact img {
     height: 200px;
     width: 200px; }
+  section .contact-info {
+    font-size: 16px; }
+    section .contact-info p {
+      font-size: 16px; }
   .description h2 {
-    font-size: 36px;
+    font-size: 24px;
     margin: 30px 0; }
   .description .projects {
     border: 0;
@@ -1417,12 +1451,19 @@ footer {
     margin: 0 auto;
     padding-bottom: 0;
     white-space: pre-line; }
+  .technologies h2 {
+    font-size: 18px; }
   .technologies .skills h2 {
     position: relative;
     top: 15px;
     vertical-align: middle; }
   .box .abilities .skills h2 {
-    vertical-align: super; }
+    bottom: 8px;
+    font-size: 18px;
+    position: relative; }
+    .box .abilities .skills h2 span {
+      bottom: -70px;
+      position: absolute; }
   .box .abilities .tools h2 {
     position: relative;
     top: 10px;
@@ -1430,8 +1471,12 @@ footer {
   section .contact img {
     height: 200px;
     width: 200px; }
+  section .contact-info {
+    font-size: 16px; }
+    section .contact-info p {
+      font-size: 16px; }
   .description h2 {
-    font-size: 36px;
+    font-size: 24px;
     margin: 30px 0; }
   .description .projects {
     border: 0;
@@ -1462,12 +1507,19 @@ footer {
     margin: 0 auto;
     padding-bottom: 0;
     white-space: pre-line; }
+  .technologies h2 {
+    font-size: 18px; }
   .technologies .skills h2 {
     position: relative;
     top: 15px;
     vertical-align: middle; }
   .box .abilities .skills h2 {
-    vertical-align: super; }
+    bottom: 8px;
+    font-size: 18px;
+    position: relative; }
+    .box .abilities .skills h2 span {
+      bottom: -70px;
+      position: absolute; }
   .box .abilities .tools h2 {
     position: relative;
     top: 10px;
@@ -1475,8 +1527,12 @@ footer {
   section .contact img {
     height: 200px;
     width: 200px; }
+  section .contact-info {
+    font-size: 16px; }
+    section .contact-info p {
+      font-size: 16px; }
   .description h2 {
-    font-size: 36px;
+    font-size: 24px;
     margin: 30px 0; }
   .description .projects {
     border: 0;
@@ -1507,12 +1563,19 @@ footer {
     margin: 0 auto;
     padding-bottom: 0;
     white-space: pre-line; }
+  .technologies h2 {
+    font-size: 18px; }
   .technologies .skills h2 {
     position: relative;
     top: 15px;
     vertical-align: middle; }
   .box .abilities .skills h2 {
-    vertical-align: super; }
+    bottom: 8px;
+    font-size: 18px;
+    position: relative; }
+    .box .abilities .skills h2 span {
+      bottom: -70px;
+      position: absolute; }
   .box .abilities .tools h2 {
     position: relative;
     top: 10px;
@@ -1520,8 +1583,12 @@ footer {
   section .contact img {
     height: 200px;
     width: 200px; }
+  section .contact-info {
+    font-size: 16px; }
+    section .contact-info p {
+      font-size: 16px; }
   .description h2 {
-    font-size: 36px;
+    font-size: 24px;
     margin: 30px 0; }
   .description .projects {
     border: 0;
@@ -1552,12 +1619,19 @@ footer {
     margin: 0 auto;
     padding-bottom: 0;
     white-space: pre-line; }
+  .technologies h2 {
+    font-size: 18px; }
   .technologies .skills h2 {
     position: relative;
     top: 15px;
     vertical-align: middle; }
   .box .abilities .skills h2 {
-    vertical-align: super; }
+    bottom: 8px;
+    font-size: 18px;
+    position: relative; }
+    .box .abilities .skills h2 span {
+      bottom: -70px;
+      position: absolute; }
   .box .abilities .tools h2 {
     position: relative;
     top: 10px;
@@ -1565,8 +1639,12 @@ footer {
   section .contact img {
     height: 200px;
     width: 200px; }
+  section .contact-info {
+    font-size: 16px; }
+    section .contact-info p {
+      font-size: 16px; }
   .description h2 {
-    font-size: 36px;
+    font-size: 24px;
     margin: 30px 0; }
   .description .projects {
     border: 0;
@@ -1597,12 +1675,19 @@ footer {
     margin: 0 auto;
     padding-bottom: 0;
     white-space: pre-line; }
+  .technologies h2 {
+    font-size: 18px; }
   .technologies .skills h2 {
     position: relative;
     top: 15px;
     vertical-align: middle; }
   .box .abilities .skills h2 {
-    vertical-align: super; }
+    bottom: 8px;
+    font-size: 18px;
+    position: relative; }
+    .box .abilities .skills h2 span {
+      bottom: -70px;
+      position: absolute; }
   .box .abilities .tools h2 {
     position: relative;
     top: 10px;
@@ -1610,8 +1695,12 @@ footer {
   section .contact img {
     height: 200px;
     width: 200px; }
+  section .contact-info {
+    font-size: 16px; }
+    section .contact-info p {
+      font-size: 16px; }
   .description h2 {
-    font-size: 36px;
+    font-size: 24px;
     margin: 30px 0; }
   .description .projects {
     border: 0;
@@ -1642,12 +1731,19 @@ footer {
     margin: 0 auto;
     padding-bottom: 0;
     white-space: pre-line; }
+  .technologies h2 {
+    font-size: 18px; }
   .technologies .skills h2 {
     position: relative;
     top: 15px;
     vertical-align: middle; }
   .box .abilities .skills h2 {
-    vertical-align: super; }
+    bottom: 8px;
+    font-size: 18px;
+    position: relative; }
+    .box .abilities .skills h2 span {
+      bottom: -70px;
+      position: absolute; }
   .box .abilities .tools h2 {
     position: relative;
     top: 10px;
@@ -1655,8 +1751,12 @@ footer {
   section .contact img {
     height: 200px;
     width: 200px; }
+  section .contact-info {
+    font-size: 16px; }
+    section .contact-info p {
+      font-size: 16px; }
   .description h2 {
-    font-size: 36px;
+    font-size: 24px;
     margin: 30px 0; }
   .description .projects {
     border: 0;
@@ -1677,18 +1777,22 @@ footer {
   .navbar-inverse .navbar-nav li a {
     text-align: center; } }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 320px) and (max-width: 375px) {
   header .main-content {
     max-height: 120vh; }
   header .about p {
+    font-size: 18px;
     line-height: 130%;
-    margin: 1%; } }
+    margin: 1%; }
+  .box .abilities .skills h2 span {
+    position: absolute;
+    top: -70px; } }
 
 @media only screen and (max-width: 320px) {
   header .main-content {
     height: 150vh; }
   header .about p {
-    font-size: 21px;
+    font-size: 18px;
     margin: 1%;
     word-break: keep-all; } }
 
@@ -1755,8 +1859,5 @@ body {
   float: left;
   min-height: 145px;
   padding: 1px; }
-
-footer {
-  max-height: 100px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,17 +1,68 @@
-//102px - 1441px
-@media only screen and (min-width: 1023px) and (max-width: 1441px)
+//>2560px
+@media only screen and (min-width: 2560px)
+
+  .description
+    padding-bottom: 100px
+
+  .main-content
+    background-position: 50% 30%
+    background-size: cover
+
+    .about
+      max-width: 600px
+
+      img
+        height: 300px
+        margin-top: 50px
+        width: 300px
+
+      p
+        font-size: 24px
+        width: 700px
+
+  .big-container
+    .abilities
+      .skills
+        padding-top: 25px
+
+        span
+          position: absolute
+          top: -60px
+
+  footer
+    p
+      font-size: 24px
+
+  section
+    .contact-info
+      font-size: 24px
+
+      p
+        font-size: 24px
+
+//1024px - 1440px
+@media only screen and (min-width: 1024px) and (max-width: 1440px)
 
   header
     .main-content
-      height: 132vh
+      height: 113vh
 
-//769px - 1024px
-@media only screen and (min-width: 769px) and (max-width: 1024px)
+  .big-container
+    .abilities
+      .skills
+        padding-top: 25px
+
+        span
+          position: absolute
+          top: -70px
+
+//768px - 1024px
+@media only screen and (min-width: 768px) and (max-width: 1024px)
 
   header
 
     .main-content
-      height: 132vh
+      height: 110vh
 
   .description
 
@@ -19,37 +70,39 @@
       margin: 40px 0
 
   .projects
-    margin: 40px 0
+    margin: 40px
 
-//769px - 991px
-@media only screen and (min-width: 769px) and (max-width: 991px)
+// //768px - 991px
+// @media only screen and (min-width: 768px) and (max-width: 991px)
 
-  @for $i from 1 through 12
-    .col-m-#{$i}
-      width: 100% / 12 * $i
+//   @for $i from 1 through 12
+//     .col-m-#{$i}
+//       width: 100% / 12 * $i
 
-    .big-container .abilities .ability img:hover
-      transform: none
+//     .big-container .abilities .ability img:hover
+//       transform: none
 
-    .big-container .technologies .border .ability .ability-image img:hover
-      transform: none
+//     .big-container .technologies .border .ability .ability-image img:hover
+//       transform: none
 
-    .row p
-      font-size: 21px
-      margin-left: 25%
-      max-width: 335px
-      padding: 0 20px
-      text-align: justify
+//     .row
+//       p
+//         font-size: 21px
+//         margin-left: 25%
+//         max-width: 335px
+//         padding: 0 20px
+//         text-align: justify
 
-//<768px
 @media only screen and (max-width: 768px)
 
-  @for $i from 1 through 12
-    .col-m-#{$i}
-      width: 100% / 12 * $i
+  .description
+    padding-bottom: 50px
+
+//425px - 768px
+@media only screen and (min-width: 425px) and (max-width: 768px)
 
   @for $i from 1 through 12
-    .col-s-#{$i}
+    .col-m-#{$i}
       width: 100% / 12 * $i
 
     header
@@ -58,29 +111,37 @@
 
         h2
           font-size: $base-font + 12px
+          margin: 0 auto
           max-width: 418px
 
         p
-          font-size: $base-font + 6px
+          font-size: $base-font + 2px
           letter-spacing: 1px
-          margin-left: 5%
-          max-width: 335px
+          margin-left: 0 auto
+          max-width: 430px
           text-align: justify
-          word-break: keep-all
-          word-spacing: -3px
 
       .main-content
-        height: 137vh
+        background-size: cover
+        display: flex
+        flex-direction: column
+        height: 160vh
 
     .big-container
 
       .abilities
+        padding: 20px 10px 0
 
         .border .ability .ability-image img:hover
           transform: none
 
         .ability-description
           padding-top: 0
+
+        .skills
+          span
+            position: absolute
+            top: -70px
 
 
       .technologies
@@ -97,23 +158,26 @@
     .description
 
       .projects
-        border: 0
+        border: 1px solid $white
+        border-radius: 7px
         display: grid
         max-width: 425px
-        padding: 15px 0
+        padding: 50px
 
     img
       max-width: 320px
 
-    .technologies .skills
+    .technologies
+      .skills
 
-      h2
-        font-size: 4vw
+        h2
+          font-size: 4vw
 
-    .abilities .skills
+    .abilities
+      .skills
 
-      h2
-        font-size: 4vw
+        h2
+          font-size: 4vw
 
     .tools
 
@@ -134,13 +198,27 @@
     .projects
       margin-bottom: 0
 
-    .icons i:hover
-      color: $black
+    .icons
+      i
+        &:hover
+          color: $black
 
-    section .contact-info .my-cv:hover
-      color: $black
+    section
+      .contact-info
+        .my-cv:hover
+          color: $black
 
-//<425px
+@media only screen and (min-width: 325px) and (max-width: 375px)
+
+  .box
+    .abilities
+      .skills
+        h2
+          span
+            position: absolute
+            top: -70px
+
+//425px
 @media only screen and (max-width: 425px)
 
   @for $i from 1 through 12
@@ -164,6 +242,9 @@
 
     .technologies
 
+      h2
+        font-size: 18px
+
       .skills
 
         h2
@@ -176,8 +257,13 @@
       .skills
 
         h2
-          // position: relative
-          vertical-align: super
+          bottom: 8px
+          font-size: 18px
+          position: relative
+
+          span
+            bottom: -70px
+            position: absolute
 
       .tools
 
@@ -194,10 +280,16 @@
           height: 200px
           width: 200px
 
+      .contact-info
+        font-size: $base-font
+
+        p
+          font-size: $base-font
+
     .description
 
       h2
-        font-size: 36px
+        font-size: 24px
         margin: 30px 0
 
     .description
@@ -227,7 +319,7 @@
       text-align: center
 
 //<375px
-@media only screen and (max-width: 375px)
+@media only screen and (min-width: 320px) and (max-width: 375px)
 
   header
 
@@ -237,8 +329,15 @@
     .about
 
       p
+        font-size: $base-font + 2px
         line-height: 130%
         margin: 1%
+
+  .box .abilities .skills
+    h2
+      span
+        position: absolute
+        top: -70px
 
 //<320px
 @media only screen and (max-width: 320px)
@@ -251,7 +350,7 @@
     .about
 
       p
-        font-size: 21px
+        font-size: 18px
         margin: 1%
         word-break: keep-all
 
